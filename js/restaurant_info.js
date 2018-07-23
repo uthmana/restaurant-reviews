@@ -50,7 +50,7 @@ fetchRestaurantFromURL = (callback) => {
  */
 fillRestaurantHTML = (restaurant = self.restaurant) => {
   const name = document.getElementById('restaurant-name');
-  name.innerHTML = `<span tabindex="0">${restaurant.name}</span>`;
+  name.innerHTML = `<span>${restaurant.name}</span>`;
 
   const address = document.getElementById('restaurant-address');
   address.innerHTML = restaurant.address;
